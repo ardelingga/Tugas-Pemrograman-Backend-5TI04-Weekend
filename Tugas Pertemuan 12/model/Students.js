@@ -1,6 +1,8 @@
 const db = require("../config/database");
 
 class Students {
+    static tableName = "students";
+
     static all() {
         return new Promise((resolve, reject) => {
             const query = "SELECT * FROM students";
